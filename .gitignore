@@ -218,3 +218,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# CHURNSHIELD-AGENT: archivos locales y temporales
+.DS_Store
+*.tmp
+*.bak
+*.swp
+
+# Modelos serializados generados localmente
+*.pkl
+*.pickle
+*.joblib
+
+# Secretos y configuraciones locales
+.env.*
+!.env.example
+
+
+# CSV temporales generados por ejecuciones del agente
+logs/actions_*.csv
+logs/priority_*.csv
+logs/ranking_*.csv
